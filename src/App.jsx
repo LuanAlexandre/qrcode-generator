@@ -5,10 +5,8 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <main className="d-flex justify-content-center align-items-center">
-      <section className="d-flex container">
-        <Home />
-      </section>
+    <main className="d-flex justify-content-around align-items-center container bg-success bg-opacity-75">
+      <Home />
     </main>
   );
 };
