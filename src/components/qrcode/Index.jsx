@@ -2,7 +2,13 @@ import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 import QRCodeStyling from "qr-code-styling";
 
-const Index = ({ data }) => {
+const Index = ({
+  data,
+  backgroundOptions,
+  dotsOptions,
+  cornersSquareOptions,
+  cornersDotOptions,
+}) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -17,6 +23,10 @@ const Index = ({ data }) => {
       shape: "square",
       data,
       qrOptions: { typeNumber: 2 },
+      backgroundOptions,
+      dotsOptions,
+      cornersSquareOptions,
+      cornersDotOptions,
     });
   });
 
@@ -26,7 +36,11 @@ const Index = ({ data }) => {
     type: "svg",
     shape: "square",
     data: "valerteatro.com.br",
+    margin: 1,
     qrOptions: { typeNumber: 2 },
+    backgroundOptions,
+    cornersSquareOptions,
+    cornersDotOptions,
   });
 
   return <div ref={ref}></div>;
@@ -41,4 +55,8 @@ Index.propTypes = {
   shape: PropTypes.string,
   data: PropTypes.string,
   qrOptions: PropTypes.object,
+  backgroundOptions: PropTypes.object,
+  dotsOptions: PropTypes.object,
+  cornersSquareOptions: PropTypes.object,
+  cornersDotOptions: PropTypes.object,
 };
