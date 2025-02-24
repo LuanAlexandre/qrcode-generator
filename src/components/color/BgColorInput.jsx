@@ -10,7 +10,7 @@ const BgColorInput = ({ bgColor, setBgColor }) => {
             <input
               id="bg-color-hex"
               type="text"
-              className="form-control"
+              className="form-control text-body-tertiary"
               onChange={(tempColor) => setBgColor(tempColor.target.value)}
               value={bgColor}
             />

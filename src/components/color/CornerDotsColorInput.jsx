@@ -10,7 +10,7 @@ const CornerDotsColorInput = ({ cdColor, setCdColor }) => {
             <input
               id="cd-color-hex"
               type="text"
-              className="form-control"
+              className="form-control text-body-tertiary"
               onChange={(tempColor) => setCdColor(tempColor.target.value)}
               value={cdColor}
             />

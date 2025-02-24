@@ -10,7 +10,7 @@ const UrlInput = ({ url, setUrl }) => {
         <input
           id="url-input"
           type="url"
-          className="form-control"
+          className="form-control text-body-tertiary"
           placeholder="valerteatro.com.br"
           aria-label="URL"
           aria-describedby="url"

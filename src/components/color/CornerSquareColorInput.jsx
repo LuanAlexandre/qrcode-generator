@@ -10,7 +10,7 @@ const CornerSquareColorInput = ({ csColor, setCsColor }) => {
             <input
               id="cs-color-hex"
               type="text"
-              className="form-control"
+              className="form-control text-body-tertiary"
               onChange={(tempColor) => setCsColor(tempColor.target.value)}
               value={csColor}
             />

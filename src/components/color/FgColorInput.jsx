@@ -10,7 +10,7 @@ const FgColorInput = ({ fgColor, setFgColor }) => {
             <input
               id="fg-color-hex"
               type="text"
-              className="form-control"
+              className="form-control text-body-tertiary"
               onChange={(tempColor) => setFgColor(tempColor.target.value)}
               value={fgColor}
             />
@@ -18,7 +18,7 @@ const FgColorInput = ({ fgColor, setFgColor }) => {
           <div className="col-auto w-25">
             <input
               type="color"
-              className="w-100 form-control form-control-color"
+              className="w-100 form-control form-control-color text-secondary"
               aria-label="fgColor"
               aria-describedby="bgColor"
               onChange={(tempColor) => setFgColor(tempColor.target.value)}
