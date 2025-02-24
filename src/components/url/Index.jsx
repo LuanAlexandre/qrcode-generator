@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import UrlInput from "./UrlInput";
-import "../../styles/accordion.css";
 
 const Index = ({ url, setUrl }) => {
   return (

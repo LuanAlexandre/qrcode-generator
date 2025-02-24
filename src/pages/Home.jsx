@@ -1,3 +1,4 @@
+import "../styles/accordion.css";
 import { useState } from "react";
 import URL from "../components/url/Index";
 import QrCode from "../components/qrcode/Index";
