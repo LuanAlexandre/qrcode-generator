@@ -1,28 +1,28 @@
 import PropTypes from "prop-types";
 
-const BgColorInput = ({ bgColor, setBgColor }) => {
+const CornerDotsColorInput = ({ cdColor, setCdColor }) => {
   return (
     <form className="row m-2 p-2">
       <label className="form-label">
-        Background Color
+        Corner Dots Color
         <div className="row">
           <div className="col">
             <input
-              id="bg-color-hex"
+              id="cd-color-hex"
               type="text"
               className="form-control text-body-tertiary"
-              onChange={(tempColor) => setBgColor(tempColor.target.value)}
-              value={bgColor}
+              onChange={(tempColor) => setCdColor(tempColor.target.value)}
+              value={cdColor}
             />
           </div>
           <div className="col-auto w-25">
             <input
               type="color"
               className="w-100 form-control form-control-color"
-              aria-label="bgColor"
-              aria-describedby="bgColor"
-              onChange={(tempColor) => setBgColor(tempColor.target.value)}
-              value={bgColor}
+              aria-label="csColor"
+              aria-describedby="csColor"
+              onChange={(tempColor) => setCdColor(tempColor.target.value)}
+              value={cdColor}
             />
           </div>
         </div>
@@ -31,9 +31,9 @@ const BgColorInput = ({ bgColor, setBgColor }) => {
   );
 };
 
-export default BgColorInput;
+export default CornerDotsColorInput;
 
-BgColorInput.propTypes = {
-  bgColor: PropTypes.string,
-  setBgColor: PropTypes.func,
+CornerDotsColorInput.propTypes = {
+  cdColor: PropTypes.string,
+  setCdColor: PropTypes.func,
 };

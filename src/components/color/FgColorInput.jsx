@@ -2,26 +2,31 @@ import PropTypes from "prop-types";
 
 const FgColorInput = ({ fgColor, setFgColor }) => {
   return (
-    <form className="row align-items-center m-2 p-2">
-      <label className="form-label">Foreground Color</label>
-      <div className="col w-100">
-        <input
-          type="text"
-          className="form-control"
-          onChange={(tempColor) => setFgColor(tempColor.target.value)}
-          value={fgColor}
-        />
-      </div>
-      <div className="col-auto w-25">
-        <input
-          type="color"
-          className="w-100 form-control form-control-color"
-          aria-label="fgColor"
-          aria-describedby="bgColor"
-          onChange={(tempColor) => setFgColor(tempColor.target.value)}
-          value={fgColor}
-        />
-      </div>
+    <form className="row m-2 p-2">
+      <label className="form-label">
+        Dots Color
+        <div className="row">
+          <div className="col">
+            <input
+              id="fg-color-hex"
+              type="text"
+              className="form-control text-body-tertiary"
+              onChange={(tempColor) => setFgColor(tempColor.target.value)}
+              value={fgColor}
+            />
+          </div>
+          <div className="col-auto w-25">
+            <input
+              type="color"
+              className="w-100 form-control form-control-color text-secondary"
+              aria-label="fgColor"
+              aria-describedby="bgColor"
+              onChange={(tempColor) => setFgColor(tempColor.target.value)}
+              value={fgColor}
+            />
+          </div>
+        </div>
+      </label>
     </form>
   );
 };
